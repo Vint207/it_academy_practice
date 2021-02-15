@@ -10,6 +10,7 @@ namespace LettersCount
             string word;
             int count;
 
+            WriteLine("Введите слово:");
             word = ReadLine();
             count = 0;
             for (int i = 0; i < word.Length; i++)
@@ -19,7 +20,7 @@ namespace LettersCount
                     count++;
                 }
             }
-            WriteLine(count);
+            WriteLine($"Букв а в слове - {count}");
         }
     }
 }
