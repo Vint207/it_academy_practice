@@ -17,7 +17,7 @@ namespace GoodDay
             {
                 WriteLine("Good day, guys");
             }
-            else if (DateTime.Now.Hour > 14 & DateTime.Now.Hour < 23)
+            else if (DateTime.Now.Hour > 14 & DateTime.Now.Hour < 22)
             {
                 WriteLine("Good evening, guys");
             }
