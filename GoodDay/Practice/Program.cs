@@ -8,8 +8,10 @@ namespace Practice
     {
         static void Main(string[] args)
         {
+            CreateEmptyArray();
             CreateCollection();
             FindMaxNumb();
+            Convert();
         }
 
         static void CreateEmptyArray()
