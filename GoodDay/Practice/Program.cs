@@ -56,7 +56,7 @@ namespace Practice
             {
                 a1[i] = rand.Next(0, 100);
 
-                if (i > 0 && a1[i] > numb)
+                if (a1[i] > numb)
                 {
                     numb = a1[i];
                 }
