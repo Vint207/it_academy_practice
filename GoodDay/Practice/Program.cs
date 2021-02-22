@@ -9,6 +9,7 @@ namespace Practice
         static void Main(string[] args)
         {
             CreateCollection();
+            FindMaxNumb();
         }
 
         static void CreateEmptyArray()
@@ -38,6 +39,29 @@ namespace Practice
             }
         }
 
-        
+        static void FindMaxNumb()
+        {
+            int[] a1 = new int[13];
+            int numb;
+
+            Random rand = new Random();
+
+            numb = 0;
+
+            Console.WriteLine();
+
+            for (int i = 0; i < 10; i++)
+            {
+                a1[i] = rand.Next(0, 100);
+
+                if (i > 0 && a1[i] > numb)
+                {
+                    numb = a1[i];
+                }
+            }
+
+            Console.WriteLine(string.Join(" ", a1));
+            Console.WriteLine($"Максимальное число: {numb}");
+        }   
     }
 }
