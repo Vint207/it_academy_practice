@@ -62,6 +62,25 @@ namespace Practice
 
             Console.WriteLine(string.Join(" ", a1));
             Console.WriteLine($"Максимальное число: {numb}");
-        }   
+        }
+
+        static void Convert()
+        {
+            short numb1;
+            object numb2;
+            sbyte numb3;
+
+            numb1 = 254;
+            Console.WriteLine(numb1);
+
+            //Упаковка
+            numb2 = numb1;
+            Console.WriteLine(numb2);
+
+
+            //Распаковка
+            numb3 = (sbyte)numb2;
+            Console.WriteLine($"{numb3}");
+        }
     }
 }
