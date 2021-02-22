@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections;
-
+using static System.Convert;
 
 namespace Practice
 {
@@ -72,17 +72,16 @@ namespace Practice
             object numb2;
             sbyte numb3;
 
-            numb1 = 254;
-            Console.WriteLine(numb1);
+            numb1 = 100;
+            Console.WriteLine($"{numb1} типа {numb1.GetTypeCode()}");
 
             //Упаковка
             numb2 = numb1;
-            Console.WriteLine(numb2);
-
-
+            Console.WriteLine($"{numb2} типа object");
+            
             //Распаковка
-            numb3 = (sbyte)numb2;
-            Console.WriteLine($"{numb3}");
+            numb3 = ToSByte(numb2);
+            Console.WriteLine($"{numb3} типа {numb3.GetTypeCode()}");
         }
     }
 }
