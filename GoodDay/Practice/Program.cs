@@ -14,7 +14,7 @@ namespace Practice
 
         static void CreateEmptyArray()
         {
-            Console.WriteLine("Hello World!");
+            int[] a = new int[0];
         }
 
         static void CreateCollection()
