@@ -2,7 +2,7 @@
 
 namespace Lecture10
 {
-    public class Motorcycle
+    class Motorcycle
     {
         private int id;
         private string model = "0";
@@ -20,14 +20,14 @@ namespace Lecture10
         }
         public float Stat { get { return stat; } set { if (value <= 100) stat = value; } }
 
-        Motorcycle() { Random rand = new Random(); id = rand.Next(10000,99999); }
+        internal Motorcycle() { Random rand = new Random(); id = rand.Next(10000, 99999); }
 
-        class Engine
+        internal class Engine
         {
             int volume = 125;
             int power = 50;
 
-            public int Volume { get { return volume; }  set { if(value >=125 && value <= 3200) volume = value; } }
+            public int Volume { get { return volume; } set { if (value >= 125 && value <= 3200) volume = value; } }
             public int Power { get { return power; } set { if (value >= 50 && value <= 300) power = value; } }
         }
     }
