@@ -6,6 +6,6 @@ namespace Lecture10
 {
     class ListMoto
     {
-        internal static List<Motorcycle> listMoto;
+        internal static List<Motorcycle> listMoto = new List<Motorcycle>();
     }
 }
