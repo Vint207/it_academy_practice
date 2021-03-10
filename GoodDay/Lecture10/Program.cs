@@ -9,7 +9,6 @@ namespace Lecture10
             for (int i = 0; i < 3; i++)
             {
                 Motorcycle moto = new Motorcycle();
-                Motorcycle.Engine eng = new Motorcycle.Engine();
                 Console.WriteLine("Введите модель:");
                 moto.Model = Console.ReadLine();
                 Console.WriteLine("Введите производителя:");
@@ -17,9 +16,9 @@ namespace Lecture10
                 Console.WriteLine("Введите пробег:");
                 moto.Stat = int.Parse(Console.ReadLine());
                 Console.WriteLine("Введите объем:");
-                eng.Volume = int.Parse(Console.ReadLine());
+                moto.Volume = int.Parse(Console.ReadLine());
                 Console.WriteLine("Введите мощность:");
-                eng.Power = int.Parse(Console.ReadLine());
+                moto.Power = int.Parse(Console.ReadLine());
                 ListMoto.listMoto.Add(moto);
             }
 
@@ -30,6 +29,8 @@ namespace Lecture10
                 Console.WriteLine(item.Model);
                 Console.WriteLine(item.Stat);
                 Console.WriteLine(item.Year);
+                Console.WriteLine(item.Power);
+                Console.WriteLine(item.Volume);
             }
         }
     }
