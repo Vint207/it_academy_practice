@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Lecture10
 {
     class Motorcycle : Engine
     {
+        internal static List<Motorcycle> listMoto = new List<Motorcycle>();
         private int id;
         private string model = "0";
         private string creator = "0";

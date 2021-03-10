@@ -19,10 +19,10 @@ namespace Lecture10
                 moto.Volume = int.Parse(Console.ReadLine());
                 Console.WriteLine("Введите мощность:");
                 moto.Power = int.Parse(Console.ReadLine());
-                ListMoto.listMoto.Add(moto);
+                Motorcycle.listMoto.Add(moto);
             }
 
-            foreach (var item in ListMoto.listMoto)
+            foreach (var item in Motorcycle.listMoto)
             {
                 Console.WriteLine(item.Id);
                 Console.WriteLine(item.Creator);
