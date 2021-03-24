@@ -12,7 +12,17 @@ namespace lecture_12
         public int id;
 
         static UniqueItem() { staticId = 0; }
-        public UniqueItem() { staticId++; id = staticId; }
-        public UniqueItem(int id) { staticId = id;  this.id = staticId; }
+
+        public UniqueItem() 
+        {
+            staticId++;
+            id = staticId; 
+        }
+
+        public UniqueItem(int id) 
+        { 
+            staticId = id;
+            this.id = staticId; 
+        }
     }
 }
