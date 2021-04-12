@@ -13,8 +13,7 @@
 
             FirstOrDefault(motorcyclesArray, del, val: 50000, state: 1);
             FirstOrDefault(motorcyclesArray, del, country: "China", state: 2);
-            FirstOrDefault(motorcyclesArray, del, val: 50000, country: "China", state: 3);
-
+            FirstOrDefault(motorcyclesArray, del, val: 50000, country: "Japan", state: 3);
         }
 
         static Motorcycle FirstOrDefault(MotorcyclesArray list, MotorcycleDelegat1 arg, int val = 0, string country = null, int state = 0)
