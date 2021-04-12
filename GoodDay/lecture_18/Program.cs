@@ -20,10 +20,7 @@
         {
             foreach (var item in list.arr)
             {
-                if (arg.Invoke(item, val, country, state))
-                {
-                    return item;
-                }
+                if (arg.Invoke(item, val, country, state)) {return item; }
             }
             return null;
         }
@@ -33,24 +30,15 @@
             switch (state)
             {
                 case 1:
-                    if (obj.Odometer >= val)
-                    {
-                        return true;
-                    }
+                    if (obj.Odometer >= val) {  return true; }
                     return false;
 
                 case 2:
-                    if (obj.MadeIn == country)
-                    {
-                        return true;
-                    }
+                    if (obj.MadeIn == country) { return true; }
                     return false;
 
                 case 3:
-                    if (obj.MadeIn == country && obj.MadeIn == country)
-                    {
-                        return true;
-                    }
+                    if (obj.MadeIn == country && obj.MadeIn == country) { return true; }              
                     return false;
             }
             return false;
